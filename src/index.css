@@ -2,6 +2,13 @@ html,
 body {
   background-color: #21232a;
   color: white;
-  font-family: Helvetica, Courier, monospace;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
+  padding: 70px;
+}
+
+button {
+  padding: 1.3rem;
+  padding: 10px;
+  margin-right: 10px;
 }
