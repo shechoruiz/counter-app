@@ -1,0 +1,27 @@
+1 - Se crea una carpeta llamada tests, en la carpeta src
+2 - Se crean los archivos de pruebas dentro de esta carpeta
+3 - Recordar que estos archivos, tienen lenguaje javascript como regla de escritura
+4 - Iniciar una nueva pestaña en la terminal y escribir el comando
+  * npm run test
+5 - Dentro del archivo, se hace uso del snippet test + Tab y se nos genera una sentencia que tiene 2 valores
+  * test('should first', () => { second })
+    . El primero indiica la finalidad de la prueba
+    . La función callback (Que recibe argumentos) que evalua lo deseado
+6 - En la documentación anexa
+  * https://jestjs.io/docs/getting-started
+  Se encuentran los métodos que usa Jest (Framework de pruebas por defecto de React) para realizar las pruebas
+7 - Es una muy buena practica "agrupar" todas las pruebas realizadas para que contengan un titulo y una descripción de las pruebas. 
+  Esto se hace con una función llamada describe
+  * Snippet desc + Tab
+    describe('first', () => { second })
+    Ejemplo:
+    describe('Pruebas en el archivo demo.test.js', () => {
+      test('1. Deben de ser iguales los 2 strings', () => {
+        // 1. Inicialización
+        const mensaje = 'Hola mundo'
+        // 2. Estimulo
+        const mensaje2 = `Hola mundo!`
+        // 3. Observar el comportamiento
+        expect(mensaje).toBe(mensaje2)
+      })
+    })

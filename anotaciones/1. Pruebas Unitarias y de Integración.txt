@@ -1,0 +1,38 @@
+Pruebas unitarias y de integración
+
+Pruebas unitarias: Estn enfocadas en pequeñas funcionalidades de la apliación
+Pruebas de integración: Están enfocadas en cómo reaccionan varias piezas en conjunto
+
+###############################
+
+Características de las pruebas:
+
+1 - Fácies de escribir
+2 - Fáciles de leer
+3 - Confiables
+4 - Rápidas
+5 - Principalmente unitarias
+
+###############################
+
+Metodología AAA
+
+A - Arrange (Arreglar): En este se prepara el estado inicial, se conoce como el sujeto a probar
+  * Inicialización de variables
+  * Importaciones necesarias
+A - Act (Actuar): Se aplican acciones o estimulos al sujeto de pruebas
+  * Llamar métodos
+  * Simular clicks
+  * Realizar acciones sobre el paso anterior
+A - Assert (Afirmar): Se resume a observar el comportamiento resultante
+  * Identificar si los resultados son los esperados
+
+###############################
+
+Mitos
+
+- Hacen que mi aplicación no tenga errores
+- Las pruebas no pueden fallar
+- Hacen más lenta de aplicación (Estás solo estarán en el servidor de desarrollo, por lo que no llegan al paquete de producción)
+- Es una perdida de tiempo
+- Hay que probar todo
