@@ -1,0 +1,2 @@
+1 - Basta con importar la siguiente librería
+  * import '@testing-library/jest-dom'

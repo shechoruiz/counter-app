@@ -25,3 +25,5 @@
         expect(mensaje).toBe(mensaje2)
       })
     })
+8 - A los elementos que se deseen probar recordar anexarles al inicio de su creación, la palabra reservada
+  export, esto con el fin de poder importarlos en el documento de pruebas
