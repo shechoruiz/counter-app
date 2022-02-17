@@ -24,4 +24,17 @@ describe("Pruebas en <PrimeraApp />", () => {
 
     expect(wrapper).toMatchSnapshot();
   });
+
+  test("3. Debe mostrar el subtitulo enviado por props", () => {
+    const saludo = "Hola, soy Sergio";
+    const subtitulo = "Este es el subitutlo de prueba";
+    const wrapper = shallow(
+      <PrimeraApp saludo={saludo} subtitulo={subtitulo} />
+    );
+
+    // Este metodo find funciona mucho al querySelector de Javascript
+    const textoParrafo = wrapper.find("p").text();
+    console.log(textoParrafo);
+    expect(textoParrafo).toBe(subtitulo);
+  });
 });
